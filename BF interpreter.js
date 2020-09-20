@@ -1,4 +1,4 @@
-function interprete(code, input=""){
+function interpret(code, input=""){
     code = code.replace(/[^<>\+\-\.,\[\]]/g, "");
     const jumps = {}, open = [], mem = Array(1000).fill(0);
     let pt = 0, out = "", ix = 0;
